@@ -152,6 +152,9 @@ int main(int argc, char *argv[]){
     char newchannel[buffercapacity];
     
     if (patient != -1 && time > -1 && ecg != -1) {
+        for (int i = 0; i < 15000; i++) {
+            
+        }
         getDataPt(&chan, patient, time, ecg);
     } else if (datapt) {
         printUsage();
